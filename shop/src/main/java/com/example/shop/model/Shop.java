@@ -14,17 +14,19 @@ public class Shop {
     private int price;
     private String address;
     private int birth;
+    private String imageURL;
     private String shopCode;
 
     public Shop() {
     }
 
-    public Shop(Long id, String name, int price, String address, int birth, String shopCode) {
+    public Shop(Long id, String name, int price, String address, int birth,String imageURL, String shopCode) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.address = address;
         this.birth = birth;
+        this.imageURL = imageURL;
         this.shopCode = shopCode;
     }
 
@@ -68,7 +70,15 @@ public class Shop {
         this.birth = birth;
     }
 
-    public String getShopCode() {
+  public String getImageURL() {
+    return imageURL;
+  }
+
+  public void setImageURL(String imageURL) {
+    this.imageURL = imageURL;
+  }
+
+  public String getShopCode() {
         return shopCode;
     }
 
